@@ -26,7 +26,11 @@ export default async function handler(
       args: Chromium.args,
       executablePath: await Chromium.executablePath(),
       headless: 'new',
-      ignoreHTTPSErrors: true
+      ignoreHTTPSErrors: true,
+      defaultViewport: {
+        width: 597,
+        height: 379
+      }
     });
     const page = await browser.newPage();
 
