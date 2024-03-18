@@ -1,4 +1,4 @@
-import Chromium from 'chrome-aws-lambda';
+import Chromium from '@sparticuz/chromium';
 import type { NextApiRequest, NextApiResponse } from 'next'
 import puppeteer from 'puppeteer-core'
 
@@ -24,8 +24,9 @@ export default async function handler(
 
     const browser = await puppeteer.launch({
       args: Chromium.args,
-      executablePath: await Chromium.executablePath,
-      headless: Chromium.headless,
+      executablePath: await Chromium.executablePath(),
+      headless: 'new',
+      ignoreHTTPSErrors: true
     });
     const page = await browser.newPage();
 
@@ -35,7 +36,6 @@ export default async function handler(
 
     await browser.close();
 
-    res.setHeader('Content-Type', 'image/png');
     res.json({ message: 'Image generated successfully', data: screenshotBase64 as string });
   } catch (error) {
     console.error(error);

@@ -2,7 +2,7 @@
 
 Welcome! This repository demonstrates how to use puppeteer on vercel with browserless. [For more information visit our blog post here](https://www.browserless.io/blog/2023/03/21/puppeteer-vercel). You'll need a browserless API token in order for this to work properly which you can get by [signing up here](https://www.browserless.io/sign-up-cloud-unit/).
 
-Our code for this project is in `src/pages/api/pdf.ts` and in the `env.local` -- everything else is left untouched from the initial install! README including starting below
+Our code for this project is in `src/pages/api/card.ts` and in the `env.local` -- everything else is left untouched from the initial install! README including starting below
 
 ---
 
