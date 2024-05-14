@@ -21,7 +21,7 @@ export default async function handler(
     const {
       contentQr,
       backgroundCard,
-      avatar_uri,
+      avatar_base64,
       custom_user_id,
       user_full_name,
       formatted_birth_date,
@@ -54,7 +54,7 @@ export default async function handler(
                     <div class="content" style="height: 290px; background-color: ${backgroundCard}; display: flex;">
                         <div class="left" style="width: 30%; display: table;">
                             <div class="image-container" style="text-align: center; display:table-cell; vertical-align:middle;">
-                                <img src=${avatar_uri} height="160" width="140" alt="avatar">
+                                <img src="data:image/png;base64,${avatar_base64}" height="160" width="140" alt="avatar">
                                 <p style="font-weight: 600;">${custom_user_id}</p>
                             </div>
                         </div>
