@@ -33,6 +33,8 @@ export default async function handler(
     // }
     const url = await QRCode.toDataURL(contentQr);
     const html = `<div class="hnhpa-identity-card" style="height: 379px;width: 597px;margin: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    <img src=${url} height="60" width="60" style="position: absolute; right:3;top:93">
+
                     <div class="header" style="background-color: #08315E; width: 100%; height: 90px; display: flex; align-items: center;">
                         <div class="logo" style="width: 25%;text-align: center;display: table;">
                             <div style="display:table-cell;vertical-align:middle;">
@@ -50,8 +52,6 @@ export default async function handler(
                         </div>
                     </div>
                     <div class="content" style="height: 290px; background-color: ${backgroundCard}; display: flex;">
-                       <img src=${url} height="60" width="60" style="position: absolute; right:3;top:3">
-
                         <div class="left" style="width: 30%; display: table;">
                             <div class="image-container" style="text-align: center; display:table-cell; vertical-align:middle;">
                                 <img src=${avatar_uri} height="160" width="140" alt="avatar">
