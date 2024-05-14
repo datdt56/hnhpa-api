@@ -60,8 +60,8 @@ export default async function handler(
                             </div>
                         </div>
                         <div class="right" style="width: 70%; display: flex; justify-content: center;">
-                            <div class="member-info" style="padding-top: 20px; width: 90%;">
-                                <h2 style="width: 100%; text-align: center; margin-bottom: 25px;">THẺ HỘI VIÊN</h2>
+                            <div class="member-info" style="padding-top: 15px; width: 90%;">
+                                <h2 style="width: 100%; text-align: center; margin-bottom: 20px;">THẺ HỘI VIÊN</h2>
                                 <table>
                                     <tbody><tr>
                                         <td style="min-width: 95px; vertical-align: text-top;">Họ Và Tên:</td>
