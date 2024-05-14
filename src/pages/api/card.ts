@@ -52,9 +52,9 @@ export default async function handler(
                     <div class="content" style="height: 290px; background-color: ${backgroundCard}; display: flex;">
                         <div class="left" style="width: 30%; display: table;">
                             <div class="image-container" style="text-align: center; display:table-cell; vertical-align:middle;">
-                                <img src="${avatar_uri}" height="160" width="140" alt="avatar">
+                                <img src=${avatar_uri} height="160" width="140" alt="avatar">
                                 <p style="font-weight: 600;">${custom_user_id}</p>
-                                <img src="${url}" height="30" width="30" >
+                                <img src=${url} height="30" width="30" >
                             </div>
                         </div>
                         <div class="right" style="width: 70%; display: flex; justify-content: center;">
