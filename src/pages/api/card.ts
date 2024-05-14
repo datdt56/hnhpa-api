@@ -26,12 +26,13 @@ export default async function handler(
       user_full_name,
       formatted_birth_date,
       job_title,
+      career,
       department,
     } = req.body;
     // if (!html) {
     //   return res.status(400).json({ message: "No HTML content provided" });
     // }
-    const url = await QRCode.toDataURL(contentQr);
+    const url = await QRCode.toDataURL(custom_user_id);
     const html = `<div class="hnhpa-identity-card" style="height: 379px;width: 597px;margin: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
                     <img src=${url} height="60" width="60" style="position: absolute; right:3;top:113">
 
@@ -78,6 +79,11 @@ export default async function handler(
                                         <td style="min-width: 95px; vertical-align: text-top;rr">Cơ Quan:</td>
                                         <td style="font-weight: bold; padding-left: 15px;">${department}</td>
                                     </tr>
+                                     <tr>
+                                        <td style="min-width: 95px; vertical-align: text-top;rr">Nghề Nghiệp:</td>
+                                        <td style="font-weight: bold; padding-left: 15px;">${career}</td>
+                                    </tr>
+                                    
                                 </tbody></table>
                             </div>
                         </div>
