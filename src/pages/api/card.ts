@@ -81,7 +81,7 @@ export default async function handler(
                                     </tr>
                                      <tr>
                                         <td style="min-width: 105px; vertical-align: text-top;rr">Nghề Nghiệp:</td>
-                                        <td style="font-weight: bold; padding-left: 5px;">${career}</td>
+                                        <td style="font-weight: bold; padding-left: 15px;">${career}</td>
                                     </tr>
                                     
                                 </tbody></table>
