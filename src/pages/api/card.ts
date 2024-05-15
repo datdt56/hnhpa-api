@@ -80,8 +80,8 @@ export default async function handler(
                                         <td style="font-weight: bold; padding-left: 15px;">${department}</td>
                                     </tr>
                                      <tr>
-                                        <td style="min-width: 95px; vertical-align: text-top;rr">Nghề Nghiệp:</td>
-                                        <td style="font-weight: bold; padding-left: 15px;">${career}</td>
+                                        <td style="min-width: 105px; vertical-align: text-top;rr">Nghề Nghiệp:</td>
+                                        <td style="font-weight: bold; padding-left: 5px;">${career}</td>
                                     </tr>
                                     
                                 </tbody></table>
