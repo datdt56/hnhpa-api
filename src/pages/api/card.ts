@@ -33,7 +33,6 @@ export default async function handler(
     //   return res.status(400).json({ message: "No HTML content provided" });
     // }
     const url = await QRCode.toDataURL(custom_user_id);
-    console.log("image data", contentQr, avatar_base64)
     const html = `<div class="hnhpa-identity-card" style="height: 379px;width: 597px;margin: 20px;font-family: Verdana, Geneva, Tahoma, sans-serif;">
                     <img src=${url} height="60" width="60" style="position: absolute; right:3;top:113">
 
